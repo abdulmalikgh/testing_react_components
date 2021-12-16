@@ -1,0 +1,13 @@
+button {
+    border: 1px solid green;
+    font-size: 16px;
+    padding: .5em 3em;
+}
+.on{
+    background-color: red;
+    color: #fff;
+}
+.off{
+    background-color: transparent;
+    color: green;
+}

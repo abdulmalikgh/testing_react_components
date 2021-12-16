@@ -41,7 +41,11 @@ beforeAll( () => {
     document.body.appendChild(container);
 })
 afterEach(() => server.resetHandlers())
-afterAll( () => server.close())
+afterAll( () => {
+    server.close()
+    container.remove()
+    container = null
+})
 
 // writting test
 describe('User', () => {
